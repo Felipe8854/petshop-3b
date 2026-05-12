@@ -1,1 +1,90 @@
-
+/* Corpo do site */
+body {
+    margin: 0; /* tira margens padrão */
+    font-family: Arial; /* muda fonte */
+}
+ 
+/* Cabeçalho */
+header {
+    background-color: #ff914d; /* cor de fundo */
+    color: white; /* cor do texto */
+    text-align: center; /* centraliza */
+    padding: 15px;
+}
+ 
+/* Menu */
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none; /* tira sublinhado */
+    font-weight: bold;
+}
+ 
+/* Efeito ao passar o mouse */
+nav a:hover {
+    text-decoration: underline;
+}
+ 
+/* Seções */
+section {
+    padding: 20px;
+}
+ 
+/* Área HOME */
+#home {
+    background-color: #ffe0cc;
+    text-align: center;
+}
+ 
+/* Área SERVIÇOS */
+#servicos {
+    background-color: #f4f4f4;
+ 
+    /* FLEXBOX (organiza lado a lado) */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+ 
+/* Cards */
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px; /* borda arredondada */
+    width: 150px;
+    text-align: center;
+}
+ 
+/* Contato */
+#contato {
+    background-color: #fff;
+}
+ 
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column; /* coloca em coluna */
+    gap: 10px;
+    max-width: 300px;
+}
+ 
+/* Inputs */
+input, textarea {
+    padding: 8px;
+}
+ 
+/* Botão */
+button {
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+ 
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
