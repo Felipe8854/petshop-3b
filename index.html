@@ -1,79 +1,277 @@
- 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Pet Shop Feliz</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>LuxPet</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Ícones -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
- 
+
 <body>
- 
-<header>
-    <h1>Pet Shop Feliz</h1>
-    <tag>Nome:Felipe Ferreira de souza<br>
-    escola:Estadual Alfredo Parodi <br>
-     n:8 Turma:3B</tag>
-    <!-- MENU DE NAVEGAÇÃO -->
-    <!-- <nav> cria um menu -->
-    <!-- <a> cria links -->
+
+  <!-- MENU MOBILE -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <div class="close-menu" id="closeMenu">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+
+    <a href="#home">Início</a>
+    <a href="#services">Serviços</a>
+    <a href="#about">Sobre</a>
+    <a href="#gallery">Galeria</a>
+    <a href="#contact">Contato</a>
+
+  </div>
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="logo">
+      <i class="fa-solid fa-paw"></i>
+      <h1>LuxPet</h1>
+    </div>
+
     <nav>
-        <a href="#home">Home</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
+      <a href="#home">Início</a>
+      <a href="#services">Serviços</a>
+      <a href="#about">Sobre</a>
+      <a href="#gallery">Galeria</a>
+      <a href="#contact">Contato</a>
     </nav>
-</header>
- 
-<!-- HOME -->
-<section id="home">
-    <h2>Bem-vindo ao Pet Shop Feliz</h2>
-    <p>Cuidamos do seu pet com carinho e profissionalismo.</p>
-    <p>Aqui você encontra serviços de qualidade para cães e gatos.</p>
-</section>
- 
-<!-- SERVIÇOS -->
-<section id="servicos">
-    <h2>Nossos Serviços</h2>
- 
-    <!-- Cada <div> é um "card" de serviço -->
-    <div class="card">
-        <h3>Banho</h3>
-        <p>Higiene completa com produtos especiais.</p>
+
+    <div class="header-buttons">
+
+      <button class="theme-btn" id="themeBtn">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
     </div>
- 
-    <div class="card">
-        <h3>Tosa</h3>
-        <p>Corte de pelo profissional para seu pet.</p>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+
+      <span class="mini-tag">
+        Petshop Premium ✦ Curitiba
+      </span>
+
+      <h2>
+        O lugar perfeito
+        para o seu pet.
+      </h2>
+
+      <p>
+        Um petshop elegante, moderno e tecnológico,
+        feito para oferecer conforto, cuidado
+        e experiências premium.
+      </p>
+
+      <div class="hero-buttons">
+
+        <button class="main-btn">
+          Agendar agora
+        </button>
+
+        <button class="glass-btn">
+          Explorar
+        </button>
+
+      </div>
+
+      <div class="hero-info">
+
+        <div class="info-box">
+          <h3>+12k</h3>
+          <span>Pets felizes</span>
+        </div>
+
+        <div class="info-box">
+          <h3>24h</h3>
+          <span>Suporte VIP</span>
+        </div>
+
+      </div>
+
     </div>
- 
-    <div class="card">
-        <h3>Consulta</h3>
-        <p>Atendimento veterinário especializado.</p>
+
+    <div class="hero-image">
+
+      <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="floating-card">
+        <i class="fa-solid fa-heart"></i>
+        Atendimento Premium
+      </div>
+
     </div>
- 
-</section>
- 
-<!-- CONTATO -->
-<section id="contato">
-    <h2>Contato</h2>
- 
-    <p> Endereço: Rua dos Animais, 123</p>
-    <p> Telefone: (41) 99999-9999</p>
-    <p> Email: contato@petshop.com</p>
- 
-    <!-- FORMULÁRIO -->
-    <form>
-        <input type="text" placeholder="Seu nome">
-        <input type="email" placeholder="Seu email">
-        <textarea placeholder="Sua mensagem"></textarea>
-        <button type="submit">Enviar</button>
-    </form>
- 
-</section>
- 
-<footer>
-    <p>2026 Pet Shop Feliz</p>
-</footer>
- 
+
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services" id="services">
+
+    <div class="section-title">
+      <span>Serviços</span>
+      <h2>Experiência sofisticada</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+
+        <i class="fa-solid fa-shower"></i>
+
+        <h3>Banho & Tosa</h3>
+
+        <p>
+          Tratamentos modernos com produtos premium.
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <i class="fa-solid fa-stethoscope"></i>
+
+        <h3>Veterinário</h3>
+
+        <p>
+          Consultas completas e atendimento especial.
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <i class="fa-solid fa-bone"></i>
+
+        <h3>Nutrição</h3>
+
+        <p>
+          Alimentação ideal para saúde do seu pet.
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <i class="fa-solid fa-spa"></i>
+
+        <h3>Spa Pet</h3>
+
+        <p>
+          Relaxamento e conforto para cães e gatos.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" id="about">
+
+    <div class="about-image">
+
+      <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1200&auto=format&fit=crop">
+
+    </div>
+
+    <div class="about-text">
+
+      <span>Sobre</span>
+
+      <h2>
+        Elegância e carinho
+        em cada detalhe.
+      </h2>
+
+      <p>
+        Nossa missão é transformar o cuidado animal
+        em uma experiência moderna e inesquecível.
+      </p>
+
+      <button class="main-btn">
+        Conhecer espaço
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- GALERIA -->
+  <section class="gallery" id="gallery">
+
+    <div class="section-title">
+      <span>Galeria</span>
+      <h2>Pets felizes</h2>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-card big">
+        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1200&auto=format&fit=crop">
+      </div>
+
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?q=80&w=1200&auto=format&fit=crop">
+      </div>
+
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=1200&auto=format&fit=crop">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contact">
+
+    <div class="contact-box">
+
+      <div class="section-title left">
+        <span>Contato</span>
+        <h2>Agende agora</h2>
+      </div>
+
+      <input type="text" placeholder="Seu nome">
+
+      <input type="email" placeholder="Seu e-mail">
+
+      <textarea placeholder="Mensagem"></textarea>
+
+      <button class="main-btn full" id="sendBtn">
+        Enviar mensagem
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    Mensagem enviada com sucesso 🐾
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
 </body>
 </html>
