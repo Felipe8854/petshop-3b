@@ -10,18 +10,18 @@ const toast = document.getElementById("toast");
 // MENU MOBILE
 
 menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.add("active");
+  mobileMenu.classList.add("active");   /*mostra menu*/
 });
 
 closeMenu.addEventListener("click", () => {
-  mobileMenu.classList.remove("active");
+  mobileMenu.classList.remove("active");   /*esconde menu*/
 });
 
 // DARK MODE
 
 themeBtn.addEventListener("click", () => {
 
-  document.body.classList.toggle("dark");
+  document.body.classList.toggle("dark");  /*liga e desliga o modo escuro*/
 
   if(document.body.classList.contains("dark")){
 
@@ -80,3 +80,21 @@ hiddenElements.forEach((el) => {
   observer.observe(el);
 
 });
+
+const TimeBn =
+document.getElementById("timeBtn");
+
+function atualizarHora(){
+ const agora = new Date ();
+
+  let horas = agora.getHours();
+  let Minutos = agora.get.minutes();
+  let Segundos = agora.get.Seconds();
+
+  //deixar sempre com 2 digitos//
+  if (horas < 10) horas = "0" + horas;
+  if (minutos < 10) Minutos = "0" + Segundos;
+  if (segundos < 10)
+
+    TimeBtn.textContent = ${horas}: $ {minutos}:${}
+}

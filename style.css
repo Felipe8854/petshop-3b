@@ -127,7 +127,7 @@ nav a:hover::after{
   gap:30px;
   transition:0.5s;
 }
-
+/*menu- esconde o menu de fora*/
 .mobile-menu.active{
   right:0;
 }
@@ -152,7 +152,7 @@ nav a:hover::after{
 .hero{
   min-height:100vh;
   display:grid;
-  grid-template-columns:1.1fr 1fr;
+  grid-template-columns:1.1fr 1fr;  /*divide em colunas*/
   align-items:center;
   gap:70px;
   padding:140px 7% 60px;
@@ -192,8 +192,8 @@ nav a:hover::after{
   border:none;
   border-radius:18px;
   cursor:pointer;
-  transition:0.4s;
-  font-size:16px;
+  transition:0.4s;     /*anima o hover*/
+  font-size:16px;   /*sobe botão ao passar mouse*/
 }
 
 .main-btn{
