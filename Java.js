@@ -81,20 +81,25 @@ hiddenElements.forEach((el) => {
 
 });
 
-const TimeBn =
-document.getElementById("timeBtn");
+const timeBtn = document.getElementById("timeBtn");
 
-function atualizarHora(){
- const agora = new Date ();
+function atualizarHora() {
+  const agora = new Date();
 
   let horas = agora.getHours();
-  let Minutos = agora.get.minutes();
-  let Segundos = agora.get.Seconds();
+  let minutos = agora.getMinutes();
+  let segundos = agora.getSeconds();
 
-  //deixar sempre com 2 digitos//
+  // deixar sempre com 2 dígitos
   if (horas < 10) horas = "0" + horas;
-  if (minutos < 10) Minutos = "0" + Segundos;
-  if (segundos < 10)
+  if (minutos < 10) minutos = "0" + minutos;
+  if (segundos < 10) segundos = "0" + segundos;
 
-    TimeBtn.textContent = ${horas}: $ {minutos}:${}
+  timeBtn.textContent = `${horas}:${minutos}:${segundos}`;
 }
+
+// atualiza a cada 1 segundo
+setInterval(atualizarHora, 1000);
+
+// já inicia imediatamente
+atualizarHora();
